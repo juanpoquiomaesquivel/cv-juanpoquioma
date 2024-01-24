@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sobre mí</title>
+        <link rel="stylesheet" href="/11-resources/01-css/reset.css" />
+        <link rel="stylesheet" href="/11-resources/01-css/styles.css" />
+        <link rel="stylesheet" href="/11-resources/01-css/header.css" />
+        <link rel="stylesheet" href="/11-resources/01-css/footer.css" />
+        <link
+            rel="stylesheet"
+            href="/01-pages/01-00-aboutme/01-local-css/aboutme.css"
+        />
+        <link
+            rel="stylesheet"
+            href="/01-pages/01-00-aboutme/01-local-css/education.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+        />
+    </head>
+    <body>
+        <div id="header"></div>
+        <div class="content">
+            <h1 class="title">Juan Heriberto Poquioma Esquivel</h1>
+            <p>Buenos días, buenas tardes y buenas noches.</p>
+            <div class="aboutMe">
+                <h2>Sobre mí y mis pensamientos</h2>
+                <p>
+                    Egresado de Ingeniería de Sistemas por la Universidad
+                    Nacional Mayor de San Marcos. Mi pasión por la programación
+                    web nació en las aulas de mi univerdad y creció hasta
+                    convertise en lo que es y a lo que quiero dedicarme hasta
+                    donde la vida me permita.
+                </p>
+                <p>
+                    Me considero una buena persona que busca buenas personas con
+                    quién trabajar. Sé que no todos son buenas personas, así que
+                    seré amigo de quienes lo son y compañero de quienes no.
+                </p>
+                <p>
+                    Mi artista favorito es Pedro Martin Jose María Suárez-Vértiz
+                    Alba (o simplemente Pedro Suárez-Vértiz). Su sencillo "Me
+                    siento mejor" es la canción que me define.
+                </p>
+            </div>
+            <div class="workingExperience">
+                <h2>Experiencia Laboral</h2>
+                <div class="carousel">
+                    <div class="card" style="--main-color: #ce002d">
+                        <span class="date">JUN/SEP 2023</span>
+                        <span class="corporation"
+                            >CAJA RURAL DE AHORRO Y CRÉDITO RAÍZ</span
+                        >
+                        <div class="slide slide1">
+                            <div
+                                class="slide__content"
+                                style="background: #fff"
+                            >
+                                <span style="color: var(--main-color)"
+                                    >Junio - Septiembre 2023</span
+                                >
+                                <img src="02-images/raiz.png" />
+                            </div>
+                        </div>
+                        <div class="slide slide2">
+                            <div class="slide__content">
+                                <h3>Auxiliar de Sistemas</h3>
+                                <h4>Caja Rural de Ahorro y Crédito Raíz</h4>
+                                <p class="scrollable">
+                                    Ejecutar procesos informáticos para el
+                                    cierre de operaciones de la institución,
+                                    monitorear y registrar la incidencias
+                                    durante el desarrollo de labores, y realizar
+                                    el cierre operativo de los sistemas de la
+                                    empresa.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="--main-color: #1a1b1b">
+                        <span class="date">MUY PRONTO</span>
+                        <span class="corporation">YOU TELL ME</span>
+                        <div class="slide slide1">
+                            <div
+                                class="slide__content"
+                                style="background: #1a1b1b"
+                            >
+                                <img src="02-images/none.jpg" />
+                            </div>
+                        </div>
+                        <div class="slide slide2">
+                            <div class="slide__content">
+                                <p class="scrollable">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Distinctio dolores
+                                    deserunt veritatis. Dolorum quia delectus
+                                    incidunt fugit aut maiores illum praesentium
+                                    cumque molestiae ad consectetur porro,
+                                    recusandae eaque suscipit sunt.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="education">
+                <h2>Educación</h2>
+                <div class="accordion" id="accordion">
+                    <div class="accordion__item" data-jx-target="#toCollapse1">
+                        <button
+                            type="button"
+                            class="accordion__item__button"
+                            style="background: #27aacb; color: #fff"
+                            onclick="toggleReflection()"
+                        >
+                            <span>Formación Universitaria</span>
+                            <i id="chevron-icon" class="bi bi-chevron-down"></i>
+                        </button>
+                        <div
+                            id="toCollapse1"
+                            class="accordion__item__body"
+                            data-accordion-body
+                        >
+                            <img
+                                class="accordion__item__body__bg"
+                                src="02-images/bg-unmsm.png"
+                                alt=""
+                            />
+                            <div class="accordion__item__body__content">
+                                <h3>Ingeniería de Sistemas</h3>
+                                <h4>
+                                    Universidad Nacional Mayor de San Marcos
+                                </h4>
+                                <small>Abril 2019 - Diciembre 2023</small>
+                                <a
+                                    href="https://drive.google.com/file/d/1_WEMP3bvzrlztdWBbg7emI3y_UOtjNAl/view?usp=drive_link"
+                                    target="_blank"
+                                    >Ver</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item" data-jx-target="#toCollapse2">
+                        <button
+                            type="button"
+                            class="accordion__item__button"
+                            style="color: #fff; background: #081962"
+                        >
+                            Microsoft Excel
+                        </button>
+                        <div
+                            id="toCollapse2"
+                            class="accordion__item__body"
+                            data-accordion-body
+                        >
+                            <img
+                                class="accordion__item__body__bg"
+                                src="02-images/bg-we.jpg"
+                                alt=""
+                            />
+                            <div class="accordion__item__body__content">
+                                <h3>Excel Avanzado</h3>
+                                <h4>WE Educación Ejecutiva</h4>
+                                <small>Diciembre 2023 - Enero 2024</small>
+                                <!-- <a
+                                    href="https://drive.google.com/file/d/1ClbYvAyZhA-TpCzMm3I9DxMBP-UD2Tkl/view?usp=drive_link"
+                                    target="_blank"
+                                    >Ver</a
+                                > -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item" data-jx-target="#toCollapse3">
+                        <button type="button" class="accordion__item__button">
+                            Microsoft SQL Server
+                        </button>
+                        <div
+                            id="toCollapse3"
+                            class="accordion__item__body"
+                            data-accordion-body
+                        >
+                            <img
+                                class="accordion__item__body__bg"
+                                src="02-images/bg-sqlserver.jpg"
+                                style="object-position: center top"
+                                alt=""
+                            />
+                            <div class="accordion__item__body__content">
+                                <h3>
+                                    PROGRAMA ESPECIALIZACIÓN EN SQL SERVER -
+                                    NIVEL AVANZADO
+                                </h3>
+                                <h4>
+                                    Centro de Informática - Universidad Nacional
+                                    Mayor de San Marcos
+                                </h4>
+                                <small>Julio - Agosto 2023</small>
+                                <a
+                                    href="https://drive.google.com/file/d/1ClbYvAyZhA-TpCzMm3I9DxMBP-UD2Tkl/view?usp=drive_link"
+                                    target="_blank"
+                                    >Ver</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item" data-jx-target="#toCollapse4">
+                        <button type="button" class="accordion__item__button">
+                            Microsoft Power BI
+                        </button>
+                        <div
+                            id="toCollapse4"
+                            class="accordion__item__body"
+                            data-accordion-body
+                        >
+                            <img
+                                class="accordion__item__body__bg"
+                                src="02-images/bg-powerbi.jpg"
+                                style="object-position: center top"
+                                alt=""
+                            />
+                            <div class="accordion__item__body__content">
+                                <h3>
+                                    PROGRAMA ESPECIALIZACIÓN EN POWER BI - NIVEL
+                                    BÁSICO
+                                </h3>
+                                <h4>
+                                    Centro de Informática - Universidad Nacional
+                                    Mayor de San Marcos
+                                </h4>
+                                <small>Marzo - Abril 2023</small>
+                                <a
+                                    href="https://drive.google.com/file/d/1ihU1TDTuMsLe5lzNt7OpUaEQ1xxan2VN/view?usp=sharing"
+                                    target="_blank"
+                                    >Ver</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="knowledge">
+                <h2>Conocimientos</h2>
+                <ul>
+                    <li>
+                        <h3>Inglés</h3>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </body>
+    <script src="/11-resources/05-js/header.js"></script>
+    <script src="/11-resources/05-js/footer.js"></script>
+    <script src="05-local-js/aboutme.js"></script>
+    <script src="05-local-js/education.js"></script>
+</html>

@@ -1,0 +1,90 @@
+.education h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.accordion__item {
+    background: #fff;
+    border: 1px solid #000;
+}
+
+.accordion__item__button {
+    outline: none;
+    width: 100%;
+    background: #fff;
+    border: none;
+    padding: 16px 12px;
+    text-align: start;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#chevron-icon {
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+    transform: scaleY(-1); /* Reflect (flip) the element vertically */
+}
+
+.flipY {
+    transform: scaleY(-1); /* Reflect (flip) the element vertically */
+}
+
+.accordion__item__body {
+    /* height: 140px; */
+    padding: 16px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.accordion__item__body__bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    object-position: center center;
+    object-fit: cover;
+}
+
+.accordion__item__body__content {
+    width: 100%;
+    height: 100%;
+    background-color: #00000050;
+    padding: 8px;
+    position: relative;
+}
+
+.accordion__item__body__content h3,
+.accordion__item__body__content h4,
+.accordion__item__body__content small {
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000, 1px 1px #000,
+        -1px -1px #000, 1px -1px #000, -1px 1px #000;
+}
+
+.accordion__item__body__content h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.accordion__item__body__content h4 {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.accordion__item__body__content a {
+    color: #fff;
+    width: 100px;
+    background: #000;
+    border: 3px solid #000;
+    border-radius: 100px;
+    text-align: center;
+    text-decoration: none;
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+}
