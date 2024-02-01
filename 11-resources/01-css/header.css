@@ -7,7 +7,7 @@
 
 #header nav {
     height: 70px;
-    background-color: #000;
+    background: #f3ca14;
     padding-left: 12px;
     padding-right: 12px;
     display: flex;
@@ -22,20 +22,64 @@
 }
 
 #header .header__bar {
+    --text-color: #000;
+    --hover-bottom-color: #000;
+    --active-text-color: #3a05b6;
+    --active-bottom-color: #3a05b6;
+}
+
+#header .header__bar {
     display: flex;
     column-gap: 24px;
 }
 
 #header .header__bar a {
-    color: #fff;
+    color: #13013b;
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 700;
     text-decoration: none;
-    transition: all 255ms ease-in-out;
+    transition: all 200ms ease-out;
+    position: relative;
 }
 
-#header .header__bar a:hover {
-    transform: scale(1.25);
+#header .header__bar a:not(.active):hover {
+    color: #13013b;
+}
+
+#header .header__bar a.active {
+    color: var(--active-text-color);
+    font-weight: 800;
+}
+
+#header .header__bar a:not(.active):hover::after,
+#header .header__bar a.active::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: -3px;
+    left: 0px;
+}
+
+#header .header__bar a:not(.active):hover::after {
+    background: #13013b;
+    animation: toExpand 0.8s ease;
+}
+
+#header .header__bar a.active::after {
+    background: #3a05b6;
+}
+
+@keyframes toExpand {
+    from {
+        left: 50%;
+        width: 0%;
+    }
+    to {
+        left: 0px;
+        width: 100%;
+    }
 }
 
 #header .header__language {

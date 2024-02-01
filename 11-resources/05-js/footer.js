@@ -1,4 +1,4 @@
-function createFooter() {
+export function createFooter() {
     var footer = document.createElement("footer");
     footer.textContent = "este será el footer";
 
@@ -16,4 +16,4 @@ function createFooter() {
     document.getElementById("footer").appendChild(footer);
 }
 
-createFooter();
+export default createFooter;

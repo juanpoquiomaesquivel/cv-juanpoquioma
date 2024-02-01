@@ -1,4 +1,4 @@
-function createHeader() {
+export function createHeader() {
     var header = document.createElement("header");
     var nav = document.createElement("nav");
 
@@ -19,11 +19,11 @@ function createHeader() {
     var routes = [
         {
             label: "Explora",
-            url: "/01-pages/00-00-index/index.html",
+            url: "../00-00-index/index.html",
         },
         {
             label: "Sobre mí",
-            url: "/01-pages/01-00-aboutme/aboutme.html",
+            url: "../01-00-aboutme/aboutme.html",
         },
         {
             label: "Portafolio",
@@ -31,7 +31,7 @@ function createHeader() {
         },
         {
             label: "Contáctame",
-            url: "#",
+            url: "../03-00-contact-me/contact-me.html",
         },
     ];
 
@@ -39,6 +39,11 @@ function createHeader() {
         var link = document.createElement("a");
         link.href = route.url;
         link.textContent = route.label;
+
+        if (link.href === window.location.href) {
+            link.classList.add("active");
+        }
+
         navBar.appendChild(link);
     });
 
@@ -51,5 +56,3 @@ function createHeader() {
 
     document.getElementById("header").appendChild(header);
 }
-
-createHeader();

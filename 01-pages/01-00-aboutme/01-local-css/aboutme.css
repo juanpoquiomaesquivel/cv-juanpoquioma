@@ -1,7 +1,52 @@
 .title {
-    font-size: 2rem;
+    color: #fff;
+    font-size: 3rem;
     margin-bottom: 6px;
+    text-align: center;
     text-transform: uppercase;
+    animation: showInPage 1.5s ease-out;
+    -webkit-text-stroke: #000 3px;
+}
+
+@keyframes showInPage {
+    from {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+.aboutMe p:nth-child(even) {
+    animation: showParagraphInPageEven 1.5s ease-out;
+}
+
+.aboutMe p:nth-child(odd) {
+    animation: showParagraphInPageOdd 1.5s ease-out;
+}
+
+@keyframes showParagraphInPageEven {
+    from {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes showParagraphInPageOdd {
+    from {
+        opacity: 0;
+        transform: translateX(50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
 }
 
 .workingExperience {

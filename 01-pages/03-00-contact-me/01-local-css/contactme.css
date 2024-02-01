@@ -1,0 +1,124 @@
+.content {
+    display: flex;
+    column-gap: 8px;
+}
+
+.contactForm .title {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+
+.contactForm .form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.contactForm .formField {
+    position: relative;
+}
+
+.contactForm .formField .formInput {
+    position: relative;
+}
+
+.contactForm .formField .formInput input,
+.contactForm .formField .formTextArea textarea {
+    outline: none;
+    width: 100%;
+    min-height: 36px;
+    border: 1px solid #13013b;
+    border-radius: 5px;
+    font-size: 0.875rem;
+    font-weight: 400;
+    padding: 6px 10px;
+    transition: all 200ms ease;
+}
+
+.contactForm .formField .formInput input:hover,
+.contactForm .formField .formTextArea textarea:hover {
+    box-shadow: 0 0 0 1px #13013b;
+}
+.contactForm .formField .formInput input:focus,
+.contactForm .formField .formTextArea textarea:focus {
+    border-color: #3a05b6;
+    box-shadow: 0 0 0 1px #3a05b6;
+}
+
+.contactForm .formField .formInput label,
+.contactForm .formField .formTextArea label {
+    color: #05012393;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: normal;
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    transition: 200ms ease-out;
+    -webkit-transition: all 200ms ease-out;
+}
+
+.contactForm .formField .formInput input:not(:focus):hover + label,
+.contactForm
+    .formField
+    .formInput
+    input:not(:focus):not(:placeholder-shown):hover
+    + label,
+.contactForm .formField .formTextArea textarea:not(:focus):hover + label,
+.contactForm
+    .formField
+    .formTextArea
+    textarea:not(:focus):not(:placeholder-shown):hover
+    + label {
+    color: #13013b;
+    -webkit-text-stroke: #13013b 0.35px;
+}
+
+.contactForm .formField .formInput input:not(:placeholder-shown) + label,
+.contactForm .formField .formTextArea textarea:not(:placeholder-shown) + label {
+    color: #13013b;
+    background: #fff;
+    font-size: 0.75rem;
+    padding: 0 4px;
+    top: -9px;
+    left: 10px;
+    /* -webkit-text-stroke: #13013b 0.25px; */
+}
+
+.contactForm .formField .formInput input:focus + label,
+.contactForm .formField .formTextArea textarea:focus + label {
+    color: #3a05b6;
+    background: #fff;
+    font-size: 0.75rem;
+    padding: 0 4px;
+    top: -9px;
+    left: 10px;
+    transition: 200ms ease-out;
+    -webkit-text-stroke: #3a05b6 0.35px;
+}
+
+.contactForm .formAction {
+    width: 100%;
+    display: grid;
+    place-content: center;
+}
+
+.contactForm .formAction .formSubmit {
+    outline: none;
+    height: 36px;
+    color: #fff;
+    background: #13013b;
+    border: 1px solid #13013b;
+    border-radius: 5px;
+    padding: 4px 10px;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: 200ms ease-out;
+}
+
+.contactForm .formAction .formSubmit:hover {
+    color: #f3ca14;
+}
